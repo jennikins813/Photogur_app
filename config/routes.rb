@@ -10,6 +10,10 @@ Photogur::Application.routes.draw do
 
   get 'pictures/:id' => 'pictures#show', as: "picture"      #as:"picture" is the picture_path. 
 
+  delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
+
+  #root :to => "pictures#index" --> i dont think this needs to be here, since already at the top <--
+
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
