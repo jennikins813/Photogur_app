@@ -44,4 +44,11 @@ class PicturesController < ApplicationController
 		#the key in the hash [:id] will be the name we used in the route.
 	end
 
+	def new
+	end
+
+	def create
+		render :text => "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}"
+	end
+
 end
