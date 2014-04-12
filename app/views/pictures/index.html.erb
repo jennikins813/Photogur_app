@@ -6,5 +6,12 @@
 	<%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
 <% end %>
 
+<h1>Most recent pictures</h1>
+<ul>
+	<% @most_recent_pictures.each do |picture| %>
+		<li><%= picture.title %></li>
+	<% end %>	
+</ul>
+
 
 <!-- <% %> without the = sign, doesnot put what the code returns in the doc -->
