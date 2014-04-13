@@ -15,7 +15,7 @@
 
 <br>
 
-<h1>Pictures created 1 month ago:
+<h1>Pictures created one month ago:
 <%= Picture.created_before(1.month.ago).count %></h1>
 <ul>
 	<% @created_before.each do |picture| %>
